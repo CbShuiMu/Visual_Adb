@@ -1,4 +1,4 @@
-# Visual ADB (Premium)
+# Visual ADB
 
 Visual ADB is a graphical Android device management system based on PySide6 and ADB. It provides a user-friendly interface for managing Android devices, installing APKs, capturing screenshots, managing files, executing commands, viewing logs, and wireless projection.
 
