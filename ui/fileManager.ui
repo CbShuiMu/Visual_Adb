@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fileManager</class>
+ <widget class="QWidget" name="fileManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="topMargin">
+        <number>40</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="ToolButton" name="back_button"/>
+           </item>
+           <item>
+            <widget class="ToolButton" name="upper_button"/>
+           </item>
+           <item>
+            <widget class="EditableComboBox" name="innerPath_input"/>
+           </item>
+           <item>
+            <widget class="ToolButton" name="refresh_button"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>10</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>10</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>130</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="SearchLineEdit" name="search_input"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="TableWidget" name="file_tablewidget"/>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>10</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="CaptionLabel" name="number_label">
+                 <property name="text">
+                  <string>数量：0</string>
+                 </property>
+                 <property name="pixelFontSize" stdset="0">
+                  <number>15</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Maximum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="ProgressBar" name="ProgressBar"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>100</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>10</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="BodyLabel" name="exPath_label">
+             <property name="text">
+              <string>机外路径</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>10</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="LineEdit" name="exPath_input"/>
+           </item>
+           <item>
+            <widget class="PushButton" name="openFile_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>打开文件</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PushButton" name="push_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Push</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>EditableComboBox</class>
+   <extends>LineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ProgressBar</class>
+   <extends>QProgressBar</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SearchLineEdit</class>
+   <extends>LineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

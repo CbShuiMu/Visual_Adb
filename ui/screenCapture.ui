@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>screenCapture</class>
+ <widget class="QWidget" name="screenCapture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>40</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="PushButton" name="capture_button">
+         <property name="text">
+          <string>Capture</string>
+         </property>
+         <property name="hasIcon" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>10</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="PushButton" name="save_button">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>5</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="ScrollArea" name="capturephoto_Area">
+       <property name="minimumSize">
+        <size>
+         <width>600</width>
+         <height>430</height>
+        </size>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>625</width>
+          <height>445</height>
+         </rect>
+        </property>
+        <widget class="ImageLabel" name="ImageLabel">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>180</y>
+           <width>72</width>
+           <height>72</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ScrollArea</class>
+   <extends>QScrollArea</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ImageLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>test</class>
+ <widget class="QWidget" name="test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="PushButton" name="PushButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>102</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>安装</string>
+   </property>
+  </widget>
+  <widget class="PushButton" name="PushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>102</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>卸载</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
