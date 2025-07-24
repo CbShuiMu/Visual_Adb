@@ -33,14 +33,14 @@ class Demo(SplitFluentWindow):
         self.screenCapture_Interface = screenCapture(self)
         self.logRecord_Interface = logRecord(self)
         self.wirelessprojection_Interface=wirelessProjection(self)
-        self.addSubInterface(self.connect_Interface,FluentIcon.CONNECT,"连接")
-        self.addSubInterface(self.deviceInfo_Interface,FluentIcon.INFO,"设备信息")
-        self.addSubInterface(self.fileManager_Interface, FluentIcon.FOLDER, "文件管理")
-        self.addSubInterface(self.apkInstall_Interface, FluentIcon.DOWNLOAD, "安装")
-        self.addSubInterface(self.commandTerminal_Interface,FluentIcon.COMMAND_PROMPT,"命令行终端")
-        self.addSubInterface(self.wirelessprojection_Interface,FluentIcon.PROJECTOR,"无线投屏")
-        self.addSubInterface(self.logRecord_Interface,FluentIcon.DICTIONARY,"日志记录")
-        self.addSubInterface(self.screenCapture_Interface, FluentIcon.CAMERA, "屏幕截图")
+        self.addSubInterface(self.connect_Interface,FluentIcon.CONNECT,"Connect")
+        self.addSubInterface(self.deviceInfo_Interface,FluentIcon.INFO,"Device Info")
+        self.addSubInterface(self.fileManager_Interface, FluentIcon.FOLDER, "File Manager")
+        self.addSubInterface(self.apkInstall_Interface, FluentIcon.DOWNLOAD, "Install")
+        self.addSubInterface(self.commandTerminal_Interface,FluentIcon.COMMAND_PROMPT,"Command Terminal")
+        self.addSubInterface(self.wirelessprojection_Interface,FluentIcon.PROJECTOR,"Wireless Projection")
+        self.addSubInterface(self.logRecord_Interface,FluentIcon.DICTIONARY,"Log Record")
+        self.addSubInterface(self.screenCapture_Interface, FluentIcon.CAMERA, "Screen Capture")
         # self.navigationInterface.addWidget(
         #     routeKey='device',
         #     widget=NavigationWidget(self),
@@ -48,7 +48,7 @@ class Demo(SplitFluentWindow):
         # )
 
     def createErrorInfoBar(self,content):
-        '''错误消息提示'''
+        '''Error message notification'''
         self.errorInfoBar = InfoBar.error(
             title='错误',
             content=f"{content}",
@@ -60,7 +60,7 @@ class Demo(SplitFluentWindow):
         )
 
     def createWarningInfoBar(self,content):
-        '''警告消息提示'''
+        '''Warning message notification'''
         InfoBar.warning(
             title='提示',
             content=f"{content}",
@@ -72,7 +72,7 @@ class Demo(SplitFluentWindow):
         )
 
     def createSuccessInfoBar(self,content):
-        '''成功消息提示'''
+        '''Success message notification'''
         InfoBar.success(
             title='成功',
             content=f"{content}",
@@ -85,7 +85,7 @@ class Demo(SplitFluentWindow):
         )
 
     def refresh_combobox(self):
-        '''刷新组合框选项'''
+        '''Refresh combobox options'''
         combobox_device_list=list()
         for item in self.connect_Interface.device_combobox.items:
             combobox_device_list.append(item.text)
@@ -104,12 +104,12 @@ class Demo(SplitFluentWindow):
                 self.connect_Interface.device_combobox.addItems(ADB_deviceName_list)
 
     class refresh_device_Thread(QThread):
-        '''刷新设备线程'''
+        '''Device refresh thread'''
         def run(self):
             while True:
                 self.parent().refresh_combobox()
 
-    # '''拖放'''
+    # '''Drag and drop'''
     #
     # def dragEnterEvent(self, event: QDragEnterEvent):
     #     if event.mimeData().hasUrls():
